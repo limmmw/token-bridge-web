@@ -8,11 +8,9 @@ if (!isset($_GET['token']) || empty($_GET['token'])) {
 $token = $_GET['token'];
 unset($_GET['token']);
 
-// Ambil semua data pin dari query string (misal: V0=...)
 $params = http_build_query($_GET);
 $url = "https://blynk.cloud/external/api/update?token=$token&$params";
 
-// Kirim ke Blynk
 $response = @file_get_contents($url);
 
 if ($response === FALSE) {
