@@ -71,7 +71,7 @@
             <h2>How to Use</h2>
             <p>To use this API, make sure to include the required parameters in your request. For example:</p>
             <pre>
-GET /get_token?token=YOUR_TOKEN&V1
+GET /get_token.php?token=YOUR_TOKEN&V1
             </pre>
             <p>Replace <code>YOUR_TOKEN</code> with your actual token and <code>V1</code> with the desired pin.</p>
         </section>
